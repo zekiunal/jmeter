@@ -15,4 +15,5 @@ ENV TEST_PLAN test
 ENV REMOTE_HOSTS 127.0.0.1
 
 COPY start.sh /
+RUN chmod +x /start.sh
 ENTRYPOINT ["/start.sh"]
