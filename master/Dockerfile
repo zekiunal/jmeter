@@ -1,4 +1,4 @@
-FROM registry.monapi.com:5000/monapi/jmeter:server
+FROM registry.monapi.com:5000/monapi/jmeter:slave
 
 MAINTAINER Zeki Unal <zekiunal@gmail.com>
 
