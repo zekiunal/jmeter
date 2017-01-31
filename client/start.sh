@@ -1,4 +1,11 @@
 #!/bin/bash
+
+if [[ -z "${DOMAINS}" ]]; then
+    echo "Not support domain."
+else
+    echo ${DOMAINS} >> /etc/hosts
+fi
+
 set -e
 freeMem=`awk '/MemFree/ { print int($2/1024) }' /proc/meminfo`
 s=$(($freeMem/10*8))
