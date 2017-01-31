@@ -18,5 +18,5 @@ ENV PATH $PATH:$JMETER_BIN
 WORKDIR $JMETER_HOME
 EXPOSE $RMI_PORT
 COPY start.sh /
-RUN chmod +x start.sh
+RUN chmod +x /start.sh
 ENTRYPOINT ["/start.sh"]
