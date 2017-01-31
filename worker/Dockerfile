@@ -23,4 +23,6 @@ EXPOSE $RMI_PORT
 
 COPY start.sh /
 
+RUN chmod +x /start.sh
+
 ENTRYPOINT ["/start.sh"]
